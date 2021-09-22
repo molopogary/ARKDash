@@ -1,0 +1,28 @@
+.home{
+    flex: 4;
+    background-color: white;
+}
+.homeWidgets{
+    display: flex;
+    margin: 20px;
+
+}
+.charts{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.barTitle{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.table{
+    margin-top: 30px;
+    padding: 20px;
+}
