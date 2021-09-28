@@ -1,24 +1,49 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
+import { useState,useEffect } from "react"
+
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+
 import Grid from '@mui/material/Grid';
 import TopBar from '../topbar/TopBar'
 import '../featuredInfo/featuredInfo.css'
 import Table from '../table/Table'
 import Chart from '../chart/Chart'
-import OkvsNotOk from '../chart/OkvsNotOk';
+
 import {dummyData} from '../../dummyData'
-import { prodData } from '../../OknotOkDummy'
+
 import '../../pages/home/home.css'
+import Clock from '../dateTime/Clock.jsx'
+
+
+
+
 
 
 export default function BasicGrid() {
+  const [targetState,setTargetState]=useState()
+  //lifecycle
+//call everytime it loads
+  useEffect(()=>{
+    setInterval(()=>{
+      var targets=['250','233','620','168','432']
+      setTargetState( targets.forEach(element => {
+        console.log(element)
+         
+       }))
 
+    },10000)
+
+  },[])
+
+ 
+
+
+  let changedTarget= document.getElementById('target')
 
 
   return (
       <>
+      
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
@@ -27,22 +52,24 @@ export default function BasicGrid() {
         <Grid item xs={3}>
           <div className="featuredItem">
         <span className="featuredTitle">TARGET</span>
-        <h1>250</h1>
-        
+       
                    </div>
 
         </Grid>
         <Grid item xs={3}>
           <div className="featuredItem">
         <span className="featuredTitle">ACTUAL</span>
-        <h1>120</h1>
+        <h1 >120</h1>
+        
+       
+        
         
     </div>
         </Grid>
         <Grid item xs={3}>
           <div className="featuredItem">
-        <span className="featuredTitle">SHIFT</span>
-        <h1>07:30-15:30</h1>
+        <span className="featuredTitle"><Clock/></span>
+       
         
     </div>
         </Grid>
@@ -54,18 +81,18 @@ export default function BasicGrid() {
     </div>
         </Grid>
         <Grid item xs={12}>
-          <Table/>
-        </Grid>
-        <div className='charts'>
-                
-        <Grid item xs={6}>
-        <OkvsNotOk data={prodData} title="Real Time Performance" dataKey="ok" dataK="notOk"/>          
-        </Grid>
-        <Grid item xs={6}>
         <Chart data={dummyData} title=
-            "Weekly Performance" grid dataKey="Production"/>
+            "Driver Guard Production" grid dataKey="Target" dataK='Actual' dataKeyss='ActualOkay'/>
           
         </Grid>
+       
+        <Grid item xs={12}>
+          <div className='padTable'>
+          <Table/>
+          </div>
+        </Grid>
+        <div className='charts'>
+        
         </div>
       </Grid>
     </Box>

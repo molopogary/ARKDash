@@ -1,62 +1,79 @@
 export const dummyData = [
     {
-      name: 'Jan',
-      "Production": 4000,
+      time: '07:00 - 08:00',
+      "Target": 100,
+      "Actual": 25,
+      "ActualOkay": 78
       
     },
     {
-      name: 'Feb',
-      "Production": 2000,
+      
+      time: '08:00 - 09:00',
+      "Target": 56,
+      "Actual": 22,
+      "ActualOkay": 68
+      
+
       
     },
     {
-      name: 'Mar',
-      "Production": 7000,
+      time: '09:00 - 10:00',
+      "Target": 104,
+      "Actual": 26,
+      "ActualOkay": 33
       
     },
     {
-      name: 'Apr',
-      "Production": 2780,
+      time: '10:00 - 11:00',
+      "Target": 59,
+      "Actual": 47,
+      "ActualOkay": 38
       
     },
     {
-      name: 'May',
-      "Production": 1890,
+      time: '11:00 - 12:00',
+      "Target": 44,
+      "Actual": 255,
+      "ActualOkay": 111
+      
+
     },
       
     {
-      name: 'Jun',
-      "Production": 2390,
+      time: '12:00 - 13:00 ',
+      "Target": 77,
+      "Actual": 106,
+      "ActualOkay": 44
+      
     },
      
     {
-      name: 'Jul',
-      "Production": 8490,
+      time: '13:00 - 14:00',
+      "Target": 103,
+      "Actual": 98,
+      "ActualOkay": 77
       
     },
     {
-        name: 'Aug',
-        "Production": 940,
+        time: '14:00 - 15:00',
+        "Target": 109,
+        "Actual": 101,
+        "ActualOkay": 100
+      
         
       },
       {
-        name: 'Sep',
-        "Production": 5490,
-        
+        time: '15:00 - 16:00',
+        "Target": 67,
+        "Actual": 100,
+        "ActualOkay": 93
+         
       }, 
       {
-        name: 'Oct',
-        "Production": 1490,
-        
-      },
-      {
-        name: 'Nov',
-        "Production": 3440,
-        
-      },
-      {
-        name: 'Dec',
-        "Production": 9890,
-        
+        time: '16:00 - 17:00',
+        "Target": 100,
+        "Actual": 25,
+        "ActualOkay": 78
+      
       },
   ];

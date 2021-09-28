@@ -14,7 +14,7 @@ export default function TopBar() {
        <div className="topbar">
            <div className="topbarWrapper">
                <div className="topLeft">
-                   <img src={image} className='logo'/>
+                   <img src={image} alt ='Logo' className='logo'/>
                </div>
                <div className="topRight">
                    <div className="topbarIconsContainer">

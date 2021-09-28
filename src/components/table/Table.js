@@ -15,7 +15,7 @@ const rows = [
   createData('Bin Liners', 159, 60, 24, 5),
   createData('Tail Gates', 237, 90, 37, 43),
   createData('Canopies', 262, 160, 24, 60),
-  createData('Anotehr project', 305, 37, 67, 43),
+  createData('Driver Guard', 305, 37, 67, 43),
   createData('SEZ', 356, 16.0, 49, 39),
 ];
 
@@ -25,11 +25,11 @@ export default function DenseTable() {
       <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
         <TableHead>
           <TableRow>
-            <TableCell>Product </TableCell>
-            <TableCell align="right">Daily Target</TableCell>
-            <TableCell align="right">Actual</TableCell>
-            <TableCell align="right">Total OK</TableCell>
-            <TableCell align="right">Total Not OK</TableCell>
+            <TableCell><h3>Product </h3></TableCell>
+            <TableCell align="right"><h3>Daily Target</h3></TableCell>
+            <TableCell align="right"><h3>Actual</h3></TableCell>
+            <TableCell align="right"><h3>Actual OK</h3></TableCell>
+            <TableCell align="right"><h3>Actual Not OK</h3></TableCell>
            
           </TableRow>
         </TableHead>

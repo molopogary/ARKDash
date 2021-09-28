@@ -1,15 +1,26 @@
 import Sidebar from "./components/topbar/sidebar/Sidebar"
-import TopBar from "./components/topbar/TopBar"
+
 import './app.css'
-import Home from './pages/home/Home'
+
 import Grid from './components/grid/Grid'
-import Chart from "./components/chart/Chart"
+
+import WeeklyMonthly from "./components/grid/WeeklyMonthly"
+
+
+
 
 function App() {
+  
   return (
-    <div>
+    <div className='main'>
       <Grid/>
-     
+       <center><h1>Monthly & Weekly Data Analysis</h1></center>
+
+       
+      <WeeklyMonthly/>
+      
+   
+    
     </div>
   )
 }
