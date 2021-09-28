@@ -1,6 +1,9 @@
 .home{
     flex: 4;
     background-color: white;
+  
+    
+   
 }
 .homeWidgets{
     display: flex;
@@ -11,18 +14,18 @@
     width: 100%;
     display:flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 10px;
 }
 
 .barTitle{
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
 .table{
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 20px;
 }

@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react"
+import '../featuredInfo/featuredInfo.css'
 
 
 
@@ -21,7 +22,7 @@ export default function Clock() {
   },[])
   return (
     <>
-    <div>{date}</div>
+    <div style={{fontSize:'28px'}}>{date}</div>
     <h3>{clockState}</h3>
     </>
 

@@ -3,7 +3,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 
 import Grid from '@mui/material/Grid';
-import TopBar from '../topbar/TopBar'
+
 import '../featuredInfo/featuredInfo.css'
 
 

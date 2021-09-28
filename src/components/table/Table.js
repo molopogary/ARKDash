@@ -12,17 +12,15 @@ function createData(name, target, actual,ok,notOk) {
 }
 
 const rows = [
-  createData('Bin Liners', 159, 60, 24, 5),
-  createData('Tail Gates', 237, 90, 37, 43),
-  createData('Canopies', 262, 160, 24, 60),
+ 
   createData('Driver Guard', 305, 37, 67, 43),
-  createData('SEZ', 356, 16.0, 49, 39),
+ 
 ];
 
 export default function DenseTable() {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
+      <Table sx={{ minWidth: 500 }} size="small" aria-label="a dense table">
         <TableHead>
           <TableRow>
             <TableCell><h3>Product </h3></TableCell>

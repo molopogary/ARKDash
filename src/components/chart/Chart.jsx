@@ -12,8 +12,8 @@ export default function Chart({data,dataKey,title,dataK,dataKeyss}) {
     
         <div className='lineChart'>
         <h1 className='barTitle'>{title}</h1>
-        <LineChart width={1500} height={400} data={data}
-    margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+        <LineChart width={1510} height={400} data={data}
+    margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
     <CartesianGrid strokeDasharray="3 3" />
     <XAxis dataKey="time" />
     <YAxis />

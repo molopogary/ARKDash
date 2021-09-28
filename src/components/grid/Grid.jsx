@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState,useEffect } from "react"
+
 
 import Box from '@mui/material/Box';
 
@@ -20,26 +20,9 @@ import Clock from '../dateTime/Clock.jsx'
 
 
 export default function BasicGrid() {
-  const [targetState,setTargetState]=useState()
-  //lifecycle
-//call everytime it loads
-  useEffect(()=>{
-    setInterval(()=>{
-      var targets=['250','233','620','168','432']
-      setTargetState( targets.forEach(element => {
-        console.log(element)
-         
-       }))
-
-    },10000)
-
-  },[])
-
  
 
-
-  let changedTarget= document.getElementById('target')
-
+  
 
   return (
       <>
